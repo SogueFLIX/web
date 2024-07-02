@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background: black;
+    width: 950px;
+    margin: auto;
+  
+    padding-left: 70px;
+    padding-right: 200px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* dark gray */
+    border-radius: 30px;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .DUNEmovie {
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .prueba001 {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+  }
+  
+  
+  .info01 {
+    position: absolute;
+    top: 750px;
+    left: 150px;
+  }
+  }
+  
+  
+  .invisible {
+    visibility: hidden;
+    /* or */
+    opacity: 0;
+    position: absolute;
+    top: 9501px;
+    left: 1130px;
+  
+  }

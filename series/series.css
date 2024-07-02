@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background: black;
+    width: 950px;
+    margin: auto;
+  
+    padding-left: 70px;
+    padding-right: 200px;
+    border-style: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* dark gray */
+    border-radius: 30px;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
