@@ -1,4 +1,9 @@
 /* Estilos generales */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   background: #0f0f0f;
   margin: 0;
@@ -6,14 +11,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
 }
-
 .divprincipal {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
-
 /* Logo principal - sin cambios de tamaño */
 .fotoprincipal {
   width: 500px;
@@ -21,7 +24,6 @@ body {
   object-fit: contain;
   margin-bottom: 20px;
 }
-
 /* Barra de navegación profesional */
 .navbar {
   background: linear-gradient(90deg, #e50914 0%, #b00710 100%);
@@ -30,14 +32,12 @@ body {
   margin: 20px auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
-
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
 .nav-link {
   font-size: 18px;
   color: white;
@@ -50,22 +50,18 @@ body {
   align-items: center;
   font-weight: 600;
 }
-
 .nav-link i {
   margin-right: 8px;
   font-size: 16px;
 }
-
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
 }
-
 /* Banner debajo del nav */
 .banner-container {
   margin: 20px auto;
 }
-
 .banner-image {
   width: 60%;
   max-width: 800px;
@@ -73,13 +69,11 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
-
 /* Carrusel de películas */
 .carousel-container {
   margin: 40px auto;
   position: relative;
 }
-
 .section-title {
   color: #ffffff;
   font-size: 28px;
@@ -88,7 +82,6 @@ body {
   padding-left: 20px;
   position: relative;
 }
-
 .section-title::after {
   content: '';
   position: absolute;
@@ -99,13 +92,11 @@ body {
   background: #e50914;
   border-radius: 2px;
 }
-
 .carousel-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-
 .carousel-btn {
   background: rgba(0, 0, 0, 0.7);
   border: none;
@@ -123,43 +114,35 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .carousel-btn:hover {
   background: #e50914;
   transform: translateY(-50%) scale(1.1);
 }
-
 .prev-btn {
   left: 10px;
 }
-
 .next-btn {
   right: 10px;
 }
-
 .carousel {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease;
   padding: 10px 0;
 }
-
 .carousel-item {
   flex: 0 0 20%;
   padding: 0 10px;
   box-sizing: border-box;
   transition: transform 0.3s ease;
 }
-
 .carousel-item:hover {
   transform: scale(1.05);
 }
-
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -167,11 +150,9 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
 }
-
 .carousel-item:hover img {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
-
 /* Título "Películas gratis" */
 .titulo-gratis {
   color: #ffffff;
@@ -181,7 +162,6 @@ body {
   position: relative;
   display: inline-block;
 }
-
 .titulo-gratis::after {
   content: '';
   position: absolute;
@@ -194,13 +174,11 @@ body {
   background: #e50914;
   border-radius: 2px;
 }
-
 /* Categorías de películas */
 .peliculas-categoria {
   margin: 40px auto;
   text-align: center;
 }
-
 .category-title {
   color: #ffffff;
   font-size: 24px;
@@ -210,12 +188,10 @@ body {
   display: flex;
   align-items: center;
 }
-
 .category-title i {
   margin-left: 10px;
   color: #e50914;
 }
-
 .peliculas-grid {
   display: flex;
   flex-wrap: wrap;
@@ -223,7 +199,6 @@ body {
   gap: 15px;
   padding: 0 15px;
 }
-
 .movie-card {
   position: relative;
   flex: 0 0 calc(25% - 15px);
@@ -233,19 +208,16 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-
 .movie-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
-
 .movie-card img {
   width: 100%;
   height: auto;
   display: block;
   transition: all 0.3s ease;
 }
-
 .movie-overlay {
   position: absolute;
   top: 0;
@@ -259,18 +231,15 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 .movie-card:hover .movie-overlay {
   opacity: 1;
 }
-
 .movie-overlay span {
   color: white;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
 }
-
 /* Pie de página profesional */
 .footer {
   background: #111;
@@ -278,7 +247,6 @@ body {
   margin-top: 60px;
   border-top: 4px solid #e50914;
 }
-
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -287,31 +255,26 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .footer-logo-img {
   width: 200px;
   height: auto;
   margin-bottom: 20px;
 }
-
 .footer-info {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .footer-info p {
   margin: 0 0 15px;
   color: #aaa;
   font-size: 14px;
 }
-
 .footer-social {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
 }
-
 .footer-social a {
   color: #fff;
   background: #333;
@@ -323,12 +286,10 @@ body {
   justify-content: center;
   transition: all 0.3s ease;
 }
-
 .footer-social a:hover {
   background: #e50914;
   transform: translateY(-3px);
 }
-
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -336,115 +297,97 @@ body {
   gap: 15px;
   margin-bottom: 20px;
 }
-
 .footer-links a {
   color: #aaa;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s ease;
 }
-
 .footer-links a:hover {
   color: #e50914;
 }
-
 /* Media Queries para diferentes resoluciones */
 @media (max-width: 767px) {
   .divprincipal {
     width: 100%;
     padding: 10px;
+    overflow-x: hidden;
   }
-
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
   .fotoprincipal {
     width: 300px;
     height: 140px;
   }
-
   .nav-link {
     font-size: 16px;
     padding: 10px 15px;
     margin: 0 5px;
   }
-
   .carousel-item {
     flex: 0 0 33.333%;
   }
-
   .movie-card {
     flex: 0 0 calc(50% - 10px);
     max-width: calc(50% - 10px);
   }
-
   /* Mostrar solo 9 películas en móvil (3 filas de 3) */
   .carousel-inner {
     flex-wrap: wrap;
     justify-content: center;
     transform: none !important;
   }
-
   .carousel-inner a:nth-child(10) {
     display: none;
   }
-
   .carousel-btn {
     display: none;
   }
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .divprincipal {
     width: 100%;
     padding: 15px;
   }
-
   .fotoprincipal {
     width: 400px;
     height: 160px;
   }
-
   .nav-link {
     font-size: 17px;
     padding: 12px 20px;
   }
-
   .carousel-item {
     flex: 0 0 25%;
   }
-
   .movie-card {
     flex: 0 0 calc(33.333% - 12px);
     max-width: calc(33.333% - 12px);
   }
 }
-
 @media (min-width: 1025px) {
   .divprincipal {
     width: 1200px;
     padding: 20px;
   }
-
   .fotoprincipal {
     width: 500px;
     height: 200px;
   }
-
   .nav-link {
     font-size: 18px;
     padding: 12px 25px;
   }
-
   .carousel-item {
     flex: 0 0 20%;
   }
-
   .movie-card {
     flex: 0 0 calc(25% - 15px);
     max-width: calc(25% - 15px);
   }
 }
-
-/* ... (código anterior se mantiene igual) ... */
-
 /* Sección "¿Aún no sabes qué ver?" */
 .movie-picker-section {
   margin: 60px auto;
@@ -453,38 +396,32 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
-
 .picker-subtitle {
   color: #aaa;
   font-size: 18px;
   margin-bottom: 30px;
   font-style: italic;
 }
-
 .picker-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .genre-selector {
   margin-bottom: 30px;
   text-align: center;
 }
-
 .genre-selector h3 {
   color: #fff;
   margin-bottom: 15px;
   font-size: 20px;
 }
-
 .genre-options {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
-
 .genre-btn {
   padding: 10px 20px;
   border: none;
@@ -495,22 +432,18 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .genre-btn:hover {
   background: #444;
 }
-
 .genre-btn.active {
   background: #e50914;
 }
-
 .wheel-container {
   position: relative;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
 }
-
 .wheel {
   position: relative;
   width: 100%;
@@ -522,7 +455,6 @@ body {
   box-shadow: 0 0 0 8px #333, 0 0 30px rgba(0, 0, 0, 0.8);
   margin-bottom: 30px;
 }
-
 .wheel-center {
   position: absolute;
   width: 50px;
@@ -535,7 +467,6 @@ body {
   z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .wheel-pointer {
   position: absolute;
   top: -15px;
@@ -549,7 +480,6 @@ body {
   z-index: 20;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
-
 .wheel-item {
   position: absolute;
   width: 50%;
@@ -560,7 +490,6 @@ body {
   overflow: hidden;
   clip-path: polygon(0 0, 100% 100%, 0 100%);
 }
-
 .wheel-item:nth-child(1) { transform: rotate(0deg) skewY(30deg); background: #e50914; }
 .wheel-item:nth-child(2) { transform: rotate(18deg) skewY(30deg); background: #b00710; }
 .wheel-item:nth-child(3) { transform: rotate(36deg) skewY(30deg); background: #e50914; }
@@ -581,7 +510,6 @@ body {
 .wheel-item:nth-child(18) { transform: rotate(306deg) skewY(30deg); background: #b00710; }
 .wheel-item:nth-child(19) { transform: rotate(324deg) skewY(30deg); background: #e50914; }
 .wheel-item:nth-child(20) { transform: rotate(342deg) skewY(30deg); background: #b00710; }
-
 .wheel-item-content {
   position: absolute;
   right: 10px;
@@ -593,13 +521,11 @@ body {
   transform: skewY(-30deg) rotate(15deg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
 .wheel-item-content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .spin-btn {
   padding: 15px 40px;
   background: linear-gradient(135deg, #e50914 0%, #b00710 100%);
@@ -614,16 +540,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 .spin-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(229, 9, 20, 0.6);
 }
-
 .spin-btn:active {
   transform: translateY(1px);
 }
-
 .result-container {
   width: 100%;
   max-width: 800px;
@@ -631,13 +554,11 @@ body {
   text-align: center;
   animation: fadeIn 0.5s ease;
 }
-
 .result-container h3 {
   color: #fff;
   font-size: 28px;
   margin-bottom: 20px;
 }
-
 .selected-movie {
   display: flex;
   flex-direction: column;
@@ -647,14 +568,12 @@ body {
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 @media (min-width: 768px) {
   .selected-movie {
     flex-direction: row;
     text-align: left;
   }
 }
-
 .selected-movie img {
   width: 200px;
   height: 300px;
@@ -664,30 +583,25 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-
 @media (min-width: 768px) {
   .selected-movie img {
     margin-right: 30px;
     margin-bottom: 0;
   }
 }
-
 .movie-info {
   flex: 1;
 }
-
 .movie-info h4 {
   color: #fff;
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .movie-info p {
   color: #aaa;
   margin-bottom: 8px;
   font-size: 16px;
 }
-
 .watch-btn {
   display: inline-block;
   padding: 12px 30px;
@@ -699,13 +613,11 @@ body {
   margin-top: 15px;
   transition: all 0.3s ease;
 }
-
 .watch-btn:hover {
   background: #b00710;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(229, 9, 20, 0.4);
 }
-
 .spin-again-btn {
   padding: 10px 25px;
   background: transparent;
@@ -718,23 +630,17 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .spin-again-btn:hover {
   background: rgba(229, 9, 20, 0.2);
 }
-
 .hidden {
   display: none;
 }
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes wheelSpin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(calc(360deg * 5 + var(--rotation))); }
 }
-
-/* ... (código anterior se mantiene igual) ... */
