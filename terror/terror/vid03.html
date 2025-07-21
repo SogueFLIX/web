@@ -1,98 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SOGUELIX 2.0</title>
-    <link rel="stylesheet" href="movie.css" />
-    <link rel="stylesheet" href="pelis.js" />
-    <link rel="icon" href="img/IMG_7031.ico" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SOGUEFLIX 2.0</title>
+    <link rel="stylesheet" href="movie.css">
+    <link rel="icon" href="img/IMG_7031.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
-    <!-- Inicio del body -->
     <div class="divprincipal">
-      <!--inicio del div principal-->
+      <!-- Logo principal -->
+      <img src="https://i.ibb.co/555S5Q0/1643421553983.png" class="fotoprincipal" />
+      <!-- Barra de navegación profesional -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="../../index.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+          <a href="series/series.html" class="nav-link"><i class="fas fa-tv"></i> Series</a>
+          <a href="terror/terror.html" class="nav-link"><i class="fas fa-ghost"></i> Terror</a>
+          <a href="Comedia/comedia.html" class="nav-link"><i class="fas fa-laugh-squint"></i> Comedia</a>
+          <a href="accion/accion.html" class="nav-link"><i class="fas fa-explosion"></i> Acción</a>
+        </div>
+      </nav>
 
-      <!--titulo principal inicio-->
-      <img
-        src="https://i.ibb.co/555S5Q0/1643421553983.png"
-        width="500"
-        height="200"
-        class="fotoprincipal"
-      />
-      <!-- titulo principal fin-->
-      <div class="navbar">
-        <a href="../../index.html">INICIO</a>
-        <a href="../../series/series.html">Series</a>
-        <a href="../../Comedia/comedia.html">Comedia</a>
-        <a href="../../terror/terror.html">Terror</a>
-      </div>
-      <!--- end nav-->
-      <h1 style="color: white;"></h1>
-      <!--MAS POPULARES-->
-      <div class="prueba001">
-        <div class="dune001">
-          <a>
-            <img
-              src="https://pelisimg.online/cover/scream-vi-2-1678406167.jpg"
-              alt="Dune 2"
-              width="235"
-              height="350"
-              class="fotodune"
-            />
-          </a>
-
-          <!--CONTENIDO-->
-          <div class="DUNEmovie">
-            <iframe
-              src="//pelisplay.cc/play?id=MTY4NDA0&option=latin"
-              width="200%"
-              height="350px"
-              scrolling="no"
-              allowfullscreen=""
-              frameborder="0"
-            ></iframe>
-          </div>
+      <!-- Contenido principal -->
+      <div class="movie-container">
+        <div class="movie-image">
+          <img
+            src="https://www.cuevana.is/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FghMQALCyytc6W0wlOlMIKiMSRKV.jpg&w=640&q=75"
+            alt="El Conjuro"
+            class="movie-cover"
+          />
+        </div>
+        <div class="movie-video">
+          <iframe
+            src="https://yuguaab.com/e/mk5lxzf0uze2"
+            width="100%"
+            height="100%"
+            scrolling="no"
+            allowfullscreen=""
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
+      <!-- Fin contenido -->
 
-      <!--FIN cpntenido-->
-      <!--COMPARTIR -->
-      <div class="info01">
-        <style>
-          nav {
-            background-color: gray;
-            border-radius: 25px;
-            padding: 10px;
-          }
-
-          a {
-            display: inline-block;
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            border: 2px solid black;
-            margin: 0 10px;
-          }
-        </style>
-
-        <nav>
-          <a href="trailer" target="_blank">TRAILER</a>
-
-          <a href="#">SUB ESPAÑOL</a>
-          <a href="#">MAS</a>
-        </nav>
-      </div>
-
-      <!--END COMPARTIR -->
-      <h2 class="invisible">aaaaa</h2>
-      <!--fin del div principal-->
+      <!-- Pie de página profesional -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="https://i.ibb.co/555S5Q0/1643421553983.png" alt="Sogueflix Logo" class="footer-logo-img">
+          </div>
+          <div class="footer-info">
+            <p>&copy; 2025 Sogueflix. Todos los derechos reservados.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="#">Términos de servicio</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Ayuda</a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- fin del body -->
+    <script src="script.js"></script>
   </body>
 </html>
